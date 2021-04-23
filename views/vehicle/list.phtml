@@ -1,0 +1,40 @@
+<div class="row card-designer">
+    <div class="col">
+            <div class="card">
+                <h4 class="card-title">Lista de Veículos</h4>
+                <div class="table-responsive">
+                    <table class="table table-hover table-striped">
+                        <thead class="bg-primary text-white">
+                        <tr>
+                            <th>Marca</th>
+                            <th>Modelo</th>
+                            <th>Ano</th>
+                            <th>Km</th>
+                            <th>Placa</th>
+                            <th>Ações</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <?php
+                        /** @var \App\Entity\Vehicle $vehicle */
+                        foreach ($vehicle as $vehicles) {
+                            echo "
+                    <tr>
+                        <td>{$vehicle->getMake()}</td>
+                        <td>{$vehicle->getModel()}</td>
+                        <td>{$vehicle->getYear()}</td>
+                        <td>{$vehicle->getMileage()}</td>
+                        <td>{$vehicle->getPlate()}</td>
+                        <td>
+                            <a href='/veiculos/edit?id={$vehicle->getId()}' class='btn btn-primary'>Editar</a>
+                            <a href='/veiculos/remove?id{$vehicle->getId()}' class='btn btn-danger'>Excluir</a>                           
+                        </td>
+                    </tr>";
+                        }
+                        ?>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+    </div>
+</div>

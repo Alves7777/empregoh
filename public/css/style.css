@@ -1,0 +1,51 @@
+.card-designer {
+    margin: 0;
+}
+
+
+.col, .card-body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.card-group {
+    padding-left: 19%;
+    margin-top: 5px;
+}
+
+.card {
+    height: 100%;
+    width: 100%;
+}
+
+.container-fluid {
+    width: 100%;
+    height: 100%;
+}
+
+.card-body {
+    /*margin: 10px;*/
+}
+
+.dark-logo {
+    width: 190px;
+}
+
+#input {
+    margin: 5px 10px;
+}
+
+.card-dashboard .material-icons {
+    float: right;
+    font-size: 15px;
+}
+
+.card-dashboard {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+}
+
+.high-profile {
+    padding: 10px;
+}

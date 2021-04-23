@@ -1,0 +1,153 @@
+<div class="preloader">
+    <div class="lds-ripple">
+        <div class="lds-pos"></div>
+        <div class="lds-pos"></div>
+    </div>
+</div>
+<div id="main-wrapper" data-theme="light" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+     data-sidebar-position="fixed" data-header-position="fixed" data-boxed-layout="full">
+    <header class="topbar" data-navbarbg="skin6">
+        <nav class="navbar top-navbar navbar-expand-md">
+            <div class="navbar-header" data-logobg="skin6">
+                <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i
+                        class="ti-menu ti-close"></i></a>
+                <div class="navbar-brand">
+                    <a href="index.html">
+                        <b class="logo-icon">
+                            <img src="../img/emprego-logo-horizontal.png" alt="homepage" class="dark-logo" />
+                            <img src="../img/emprego-logo-horizontal.png" alt="homepage" class="light-logo" />
+                        </b>
+                    </a>
+                </div>
+                <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)"
+                   data-toggle="collapse" data-target="#navbarSupportedContent"
+                   aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i
+                        class="ti-more"></i></a>
+            </div>
+            <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav float-left mr-auto ml-3 pl-1">
+                    <li class="nav-item d-none d-md-block">
+                        <a class="nav-link" href="javascript:void(0)">
+                            <div class="customize-input">
+                                <select
+                                    class="custom-select form-control bg-white custom-radius custom-shadow border-0">
+                                    <option selected>EN</option>
+                                    <option value="1">AB</option>
+                                    <option value="2">AK</option>
+                                    <option value="3">BE</option>
+                                </select>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav float-right">
+                    <li class="nav-item d-none d-md-block">
+                        <a class="nav-link" href="javascript:void(0)">
+                            <form>
+                                <div class="customize-input">
+                                    <input class="form-control custom-shadow custom-radius border-0 bg-white"
+                                           type="search" placeholder="Procurar" aria-label="Search">
+                                    <i class="form-control-icon" data-feather="search"></i>
+                                </div>
+                            </form>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/meu-perfil" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">
+                            <img src="../img/user-default.png" href="/meu-perfil" alt="user" class="rounded-circle"
+                                 width="40">
+                            <span class="ml-2 d-none d-lg-inline-block"href="/meu-perfil"><span>Olá,</span> <span
+                                    class="text-dark">Lucas Alves</span></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <aside class="left-sidebar" data-sidebarbg="skin6">
+        <div class="scroll-sidebar" data-sidebarbg="skin6">
+            <nav class="sidebar-nav">
+                <ul id="sidebarnav">
+                    <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="/"
+                                                 aria-expanded="false"><i data-feather="home" class="feather-icon"></i><span
+                                class="hide-menu">Dashboard</span></a></li>
+                    <li class="nav-small-cap"><span class="hide-menu">Pages</span></li>
+                    <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
+                                                 aria-expanded="false"><i data-feather="grid" class="feather-icon"></i><span
+                                class="hide-menu">Vagas</span></a>
+                        <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                            <li class="sidebar-item"><a href="/vagas/adicionar" class="sidebar-link"><span
+                                        class="hide-menu"> Adicionar Vagas
+                                        </span></a>
+                            </li>
+                            <li class="sidebar-item"><a href="/vagas/listar" class="sidebar-link"><span
+                                        class="hide-menu"> Listar Vagas
+                                        </span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
+                                                 aria-expanded="false"><i data-feather="file-text" class="feather-icon"></i><span
+                                class="hide-menu">Usuários</span></a>
+                        <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                            <li class="sidebar-item"><a href="/usuario/adicionar" class="sidebar-link"><span
+                                        class="hide-menu"> Adicionar Usuário
+                                        </span></a>
+                            </li>
+                            <li class="sidebar-item"><a href="/usuario/listar" class="sidebar-link"><span
+                                        class="hide-menu"> Listar Usuários
+                                        </span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    </li>
+                    <li class="list-divider"></li>
+                    <li class="nav-small-cap"><span class="hide-menu">Authentication</span></li>
+
+                    <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="/entrar"
+                                                 aria-expanded="false"><i data-feather="lock" class="feather-icon"></i><span
+                                class="hide-menu">Entrar
+                                </span></a>
+                    </li>
+                    <li class="sidebar-item"> <a class="sidebar-link sidebar-link"
+                                                 href="/registrar" aria-expanded="false"><i data-feather="lock"
+                                                                                            class="feather-icon"></i><span class="hide-menu">Registrar
+                                </span></a>
+                    </li>
+                    <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="/sair"
+                                                 aria-expanded="false"><i data-feather="log-out" class="feather-icon"></i><span
+                                class="hide-menu">Sair</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+    <div class="page-wrapper">
+        <div class="page-breadcrumb">
+            <div class="row">
+                <div class="col-7 align-self-center">
+                    <h3 class="page-title text-truncate text-dark font-weight-medium mb-1">Olá, Lucas!!!</h3>
+                    <div class="d-flex align-items-center">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb m-0 p-0">
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-5 align-self-center">
+                    <div class="customize-input float-right">
+                        <select class="custom-select custom-select-set form-control bg-white border-0 custom-shadow custom-radius">
+                            <option selected>Aug 19</option>
+                            <option value="1">July 19</option>
+                            <option value="2">Jun 19</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--        <footer class="footer text-center text-muted">-->
+<!--            Footer-->
+<!--            <a href="#">FOOTER</a>.-->
+<!--        </footer>-->
+    </div>
+</div>
